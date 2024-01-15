@@ -161,15 +161,10 @@ def biso_hash(message):
 
 
 # Exemple d'utilisation de la fonction pour hacher un message
-message = "mon texte"
-message2 = "mon texte"
-hashed_message_1 = biso_hash(message)
-hashed_message_2 = biso_hash(message2)
+message = input("entrez le mot à hacher")
+hashed_message = biso_hash(message)
 
 print("Message original:", message)
-print("Message haché   (biso_hash):", hashed_message_1)
-print("Message haché 2 (biso_hash):", hashed_message_2)
+print("Message haché   (biso_hash):", hashed_message)
 
-hashed_message_1==hashed_message_2
-
-len(hashed_message_2)
+len(hashed_message)
